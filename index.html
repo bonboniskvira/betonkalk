@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="calculation">
+            <!-- Délka plotu -->
+            <div class="field">
+                <h1>Délka plotu</h1>
+                <input type="number" />
+            </div>
+
+            <!-- Výška plotu -->
+            <div class="field">
+                <h1>Výška plotu</h1>
+                <input type="number" />
+            </div>
+
+            <!-- Provedení plotu -->
+            <div class="field">
+                <h1>Provedení plotu</h1>
+                <input type="text" placeholder="Vyberte" />
+            </div>
+
+            <!-- Betonové desky -->
+            <div class="items">
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Betonová deska rovná - šedá</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za betonové desky</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Betonová deska rovná soklová - šedá</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za betonové desky soklové - šedá</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Betonový sloupek průběžný hladký - šedá</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za betonové sloupky průběžné</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Betonový sloupek koncový hladký - šedá</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za betonové sloupky koncové</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Balné desky (1x balné max. 20 / 40 sokl.)</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za balné - desky</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Balné sloupky (1x balné max. 30 sloupků)</h2>
+                        <input type="number" />
+                        <h6>Ks</h6>
+                    </div>
+                    <div class="item-row">
+                        <h2>Cena za balné - sloupky</h2>
+                        <input type="text" />
+                        <h6>Kč bez DPH</h6>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-row">
+                        <h2>Zadejte vzdálenost k místu doručení (počet km z Kolína k vám)</h2>
+                        <input type="number" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="output">
+            <div class="item-row-output">
+                <h2>Cena dopravy</h2>
+                <input type="text" readonly/>
+                <h6>Kč bez DPH</h6>
+            </div>
+            <span>Cena dopravy je pouze orientační - liší se dle váhy, dopravce a prostorového objemu nákladu. Přesná cena bude specifikována při závazné objednávce.
+                Nad 12 palet nutná konzultace - volejte 724 354 527.</span>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
